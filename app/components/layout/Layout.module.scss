@@ -1,0 +1,7 @@
+.layout {
+    @apply flex w-full max-w-4xl mx-auto items-start;
+
+    > main {
+        @apply flex flex-col items-center w-full;
+    }
+}

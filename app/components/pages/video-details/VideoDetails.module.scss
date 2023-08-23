@@ -1,0 +1,54 @@
+.videoDetails {
+    @apply bg-black/30 py-4 text-white flex flex-col lg:flex-row w-full;
+
+    > .videoInfo {
+        @apply flex flex-col space-y-4 lg:flex-[0.7] relative;
+
+        > .videoWrapper {
+            @apply w-full  relative;
+
+            > video {
+                @apply w-full;
+            }
+
+            > .controls {
+                // @apply w-full space-x-2 px-2 h-[40px] flex items-center bg-gray-700/60;
+                @apply absolute left-5 bottom-5 flex items-center justify-between bg-gray-900 bg-opacity-75 rounded-lg shadow p-3 px-5 transition-all duration-1000;
+                width: calc(100% - 2.5rem);
+
+                > .buttonsWrapper {
+                    > .icon {
+                        @apply cursor-pointer text-[23px];
+                    }
+                }
+    
+                &.hide {
+                    @apply bottom-0 opacity-0;
+                }
+    
+                > .progressWrapper {
+                    @apply w-full  relative h-[20px] bg-opacity-60 bg-gray-700 mx-3 rounded-lg;
+                
+                    > .progress {
+                        @apply bg-gray-600 rounded-l-lg absolute bg-opacity-60 top-0 left-0 h-full;
+                    }
+                }
+    
+                > .icon {
+                    @apply cursor-pointer text-[23px];
+                }
+            }
+           
+        }
+
+    
+        > .widgetsWrapper {
+            @apply flex px-3 items-center justify-between;
+        }
+
+    }
+
+    > .comments {
+        @apply flex flex-col  mx-2 lg:flex-[0.3];
+    }
+}

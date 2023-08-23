@@ -1,0 +1,12 @@
+.headerItem {
+    @apply relative hover:border-b-2 border-white cursor-pointer;
+
+    &::before {
+        @apply w-[2px] opacity-0 absolute -right-[6px] transition-transform duration-500 translate-y-1 -bottom-[5%] h-[90%] bg-red-700;
+        content: '',
+    }
+
+    &:hover::before {
+        @apply opacity-100 translate-y-0;
+    }
+}

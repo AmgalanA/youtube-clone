@@ -1,0 +1,7 @@
+.auth {
+    @apply w-screen h-screen flex items-center justify-center;
+
+    > form {
+        @apply flex flex-col items-center w-[40%];
+    }
+}

@@ -1,0 +1,11 @@
+.uploadVideoModal {
+    @apply  w-screen h-screen bg-black bg-opacity-60 flex items-center justify-center fixed top-0 z-10 left-0;
+
+    > form {
+        > h1 {
+            @apply text-center text-lg;
+        }
+
+        @apply bg-gray-800 px-7 py-5 rounded-lg flex flex-col w-[50%];
+    }
+}

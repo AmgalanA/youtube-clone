@@ -1,0 +1,15 @@
+.menu {
+    @apply flex w-full flex-col py-3 items-start;
+
+    > h1 {
+                @apply  text-lg ml-2 text-gray-300 font-extralight;
+    
+        
+    }
+
+    > .menuItems {
+        @apply flex flex-col space-y-1 w-full;
+    }
+
+    
+}

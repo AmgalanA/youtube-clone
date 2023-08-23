@@ -1,0 +1,11 @@
+.inputField {
+    @apply relative flex w-full;
+
+    > input {
+        @apply flex-1 input bg-gray-300 h-10 px-3  rounded-md my-4;
+    }
+
+    > span {
+        @apply absolute -bottom-[13px] text-gray-300 left-0;
+    }
+}

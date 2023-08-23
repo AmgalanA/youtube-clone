@@ -1,0 +1,21 @@
+.menuItem {
+    @apply relative flex w-full items-center text-gray-300 hover:text-white space-x-3 font-semibold h-10 px-2;
+
+    > .icon {
+        @apply text-3xl;
+    }
+
+    > h1 {
+        @apply hover:border-b border-white w-full  cursor-pointer;
+    
+        &::before {
+            @apply h-[80%] w-[3px] rounded-lg bg-red-500 absolute right-0 top-[5%] -translate-x-1 opacity-0 transition-opacity transition-transform duration-500;
+            content: '';
+        }
+    
+        &:hover::before {
+            @apply opacity-100 translate-x-0;
+        }
+    }
+
+}

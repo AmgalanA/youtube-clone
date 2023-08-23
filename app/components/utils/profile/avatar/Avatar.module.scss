@@ -1,0 +1,11 @@
+.avatar {
+    @apply relative w-full flex flex-col items-end;
+
+    > img {
+        @apply cursor-pointer rounded-full object-cover w-10 h-10; 
+    }
+
+    .icon {
+        @apply text-2xl cursor-pointer text-gray-300 hover:text-gray-200;
+    }
+}

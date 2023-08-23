@@ -1,0 +1,11 @@
+.userProfile {
+    @apply ml-auto mr-10 w-[120px] flex flex-col items-center;
+
+    > button {
+        @apply border-2 px-6 h-8 rounded-md hover:border-gray-400;
+    }
+
+    > .avatarWrapper {
+        @apply w-full;
+    }
+}

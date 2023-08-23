@@ -1,0 +1,16 @@
+.uploadVideo {
+    @apply relative border-2 flex items-center justify-center rounded-sm mr-8 w-10 h-10 border-gray-300 ;
+
+    > .icon {
+        @apply z-10 text-white text-2xl cursor-pointer ;
+    }
+
+    &::before {
+        @apply absolute bg-gray-600 z-0 bottom-0 right-0 w-full h-0 transition-all ease-out duration-1000 ;
+        content: ''
+    }
+
+    &:hover::before {
+        @apply h-full;
+    }
+}

@@ -1,0 +1,12 @@
+.commentForm {
+    @apply flex relative items-center my-5 border-2 h-10 rounded-full px-2;
+
+    > input {
+        @apply input bg-transparent text-sm pl-2;
+    }
+
+    > .error {
+        @apply absolute top-[12px] text-gray-300 right-8 lg:top-12  text-xs;
+    }
+    
+}
